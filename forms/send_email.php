@@ -25,5 +25,5 @@ $headers .= "Return-Path:  ".$_email."\n";
 //caso a msg //seja respondida vai para  este email.
 $headers .= "MIME-Version: 1.0\n";
 
-mail($para, $assunto, $mensagem, $headers);  //função que faz o envio do email.
+mail($para, $assunto, $mensagem, "From: $nome <$email>");  //função que faz o envio do email.
 ?>
